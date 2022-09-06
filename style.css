@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 8%;
+    height: 100vh;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.card{
+    border-radius: 10px;
+    padding: 30px 35px 35px 35px;
+    margin-right: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.profile{
+    display: flex;
+
+}
+img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.name{
+    color: hsl(0, 0%, 100%);
+}
+.title{
+    color: hsl(0, 0%, 100%, 50%);
+    margin-top: 5px;
+}
+.header{
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.content{
+    color: hsl(0, 0%, 100%, 70%);
+    margin-top: 25px;
+    font-size: 0.9em;
+    line-height: 20px;
+}
+.one{
+    grid-column: 1/3;
+    background: hsl(263, 55%, 52%) url("./images/bg-pattern-quotation.svg") no-repeat 85% 0;
+}
+.tow{
+    grid-column: 3/4;
+    background-color: hsl(217, 19%, 35%);
+
+}
+.three{
+    grid-column: 1/2;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+.three .name, .five .name{
+    color: hsl(217, 19%, 35%);
+}
+.three .title, .five .title{
+    color: hsl(217, 19%, 35%, 50%);
+
+}
+.three .header, .five .header{
+    color: hsl(217, 19%, 35%);
+}
+.three .content, .five .content{
+    color: hsl(217, 19%, 35%, 70%);
+}
+.fore{
+    grid-column: 2/4;
+    background-color: hsl(219, 29%, 14%);
+    margin-top: 20px;
+}
+.five{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: hsl(0, 0%, 100%);
+}
+ .fore img{
+    border: 3px solid hsl(263, 55%, 52%);
+}
+.one img{
+    border: 3px solid hsl(0, 0%, 100%, 50%);
+}
+@media (max-width: 375px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    }
